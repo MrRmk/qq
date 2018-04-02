@@ -1,0 +1,41 @@
+/******************************即时通讯工具*******************************/
+-- 创建数据库 --
+create database test;
+
+-- 用户表 --
+create table user(
+account VARCHAR(10) PRIMARY KEY,-- 账号
+pwd VARCHAR(20),		-- 密码
+state VARCHAR(2)		-- 状态
+);
+
+-- 离线信息表 --
+create table message(
+id int PRIMARY KEY AUTO_INCREMENT,	-- id自增长
+account_from VARCHAR(10),		-- 发送者
+account_to VARCHAR(10),			-- 接收者
+content VARCHAR(140),			-- 内容
+time VARCHAR(20)			-- 时间
+);
+
+-- 向用户表中插入数据 --
+insert into user(account,pwd,state) values('王嫣兰','1','离线');
+insert into user(account,pwd,state) values('赵雯楚','1','离线');
+insert into user(account,pwd,state) values('李嘉丽','1','离线');
+insert into user(account,pwd,state) values('廖美欢','1','离线');
+insert into user(account,pwd,state) values('卢超素','1','离线');
+insert into user(account,pwd,state) values('张琦','1','离线');
+insert into user(account,pwd,state) values('何昶源','1','离线');
+insert into user(account,pwd,state) values('王启宁','1','离线');
+insert into user(account,pwd,state) values('任孟凯','1','离线');
+insert into user(account,pwd,state) values('孙明峰','1','离线');
+
+-- 离线信息表初始时，无数据，发送了离线消息后，自动插入数据 --
+
+-- 查询数据 --
+select * from user;
+select * from message;
+
+-- 删除表 --
+drop table user;
+drop table message;
