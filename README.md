@@ -114,50 +114,44 @@ Instant messaging system  即时通讯系统（类似qq聊天系统）
 
       2.6 界面设计
          2.6.1登录界面
-   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/LoginInterface.png)
-   
-            图2：登录界面
             说明：输入账号密码，点击“登录”按钮，进入用户页面；点击“注册”按钮进入，注册界面。
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/LoginInterface.png)  
             
          2.6.2注册界面
-   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/RegisterInterface.png) 
-   
-            图3：注册界面
             说明：输入账号密码，点击“注册”按钮，若账号密码无误，提示注册成功；否则，注册失败。点击“返回”按钮，返回到登录界面。
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/RegisterInterface.png)             
             
          2.6.3用户界面
+            说明：输入正确的账号密码，进入到用户界面，界面右边可以查看好友状态，界面上边可以修改自己的状态，
+                  选中右边的好友就可以在界面下边给他发送消息。
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserInterface.png)   
-   
-            图4：用户界面
-            说明：输入正确的账号密码，进入到用户界面
         
          2.6.4 用户互发消息功能
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserMutualMessage1.png)
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserMutualMessage2.png)
          
          2.6.5 用户登陆显示离线消息(如无不显示)
+            如下图所示用户“任孟凯”先给用户“何昶源”发送了离线消息，登陆用户“何昶源”查看是否有离线消息。
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserLoginDisplayOfflineMessage1.png)
    
-            用户“任孟凯”先给用户“何昶源”发送了离线消息，登陆用户“何昶源”查看是否有离线消息。 如下：
+            如下图所示，用户“何昶源”已收到离线消息。
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserLoginDisplayOfflineMessage2.png) 
-   
-            如图所示，说明用户“何昶源”已收到离线消息。
-         
+
          2.6.6 用户设置“隐身”状态
             如下图所示，用户在任孟凯设置为“隐身”状态
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserSetStealthState.png)
    
          2.6.7 用户群发消息
+            如下图所示，用户“任孟凯”给所有在线用户发送了消息。
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserGroupMessages1.png)
 
-            如图所示，用户“任孟凯”给所有在线用户发送了消息。
             如下图，两个在线用户“孙明峰”和“张琦”都收到了”任孟凯”发送的消息。
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserGroupMessages2.png)     
 
          2.6.8后台界面
-   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/ServerInterface.png)   
-   
-            图8：后台界面
             说明：后台服务器管理界面，左边页面记录用户状态，右边显示在线的用户列表。
             左上角控制菜单栏，有开启服务器按钮，只有开启之后，用户才能连接上服务器。
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/ServerInterface.png)   
+   
+            
 
