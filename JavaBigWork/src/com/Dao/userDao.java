@@ -27,7 +27,7 @@ public class userDao {
 			//加载MySql的驱动类   
 		    Class.forName("com.mysql.jdbc.Driver") ;   
 		    username = "root" ;   
-		    password = "314159" ; 
+		    password = "" ; 
 		    conn = DriverManager.getConnection(url,username,password);
 			st = conn.createStatement();
 			rs = st.executeQuery(sql);
