@@ -131,18 +131,18 @@ Instant messaging system  即时通讯系统（类似qq聊天系统）
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserMutualMessage2.png)
          
          2.6.5 用户登陆显示离线消息(如无不显示)
-            如下图所示用户“任孟凯”先给用户“何昶源”发送了离线消息，登陆用户“何昶源”查看是否有离线消息。
+            用户“任孟凯”先给用户“何昶源”发送了离线消息，登陆用户“何昶源”查看是否有离线消息。
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserLoginDisplayOfflineMessage1.png)
    
             如下图所示，用户“何昶源”已收到离线消息。
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserLoginDisplayOfflineMessage2.png) 
 
          2.6.6 用户设置“隐身”状态
-            如下图所示，用户在任孟凯设置为“隐身”状态
+            用户在任孟凯设置为“隐身”状态
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserSetStealthState.png)
    
          2.6.7 用户群发消息
-            如下图所示，用户“任孟凯”给所有在线用户发送了消息。
+            用户“任孟凯”给所有在线用户发送了消息。
    ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserGroupMessages1.png)
 
             如下图，两个在线用户“孙明峰”和“张琦”都收到了”任孟凯”发送的消息。
