@@ -12,7 +12,7 @@ public class JDBCutils {
 	//连接MySql数据库，用户名和密码都是root   
     String url = "jdbc:mysql://localhost:3306/test" ;    
 	String username = "root" ;   
-	String password = "314159" ;
+	String password = " ;
 	String driver = "com.mysql.jdbc.Driver";
 	Connection conn = null;
 	Statement s = null;
