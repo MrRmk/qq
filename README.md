@@ -28,7 +28,7 @@ Instant messaging system  即时通讯系统（类似qq聊天系统）
       
       2.1系统总体设计
         2.1.1功能结构图
-        ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/screenshot.png)
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/FunctionalStructure.png)
         
         2.1.2服务端设计
           在服务器端 用一个HashMap< userName,socket> 维护所有用户相关的信息，从而能够保证和所有的用户进行通讯。
@@ -61,10 +61,11 @@ Instant messaging system  即时通讯系统（类似qq聊天系统）
         系统数据库是利用Mysql数据库的navicat软件创建的，
         本系统用到的数据库表主要有：用户表（user）、离线消息表（message），具体如下：
         (1)	用户表：用于存储用户的账号信息。如表3.1所示
-        
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/User.png)
         
         (2)	离线消息表：用于存储发送的离线信息。如表3.2所示
-      
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/OfflineMessage.png)
+   
       2.4数据存储
         该系统使用MySQL作为数据存储的数据库，主要有两张表，
         一张用户表用于存储用户信息数据，当用户新注册一个账号时，用户数据表会增加一条记录；
@@ -72,7 +73,8 @@ Instant messaging system  即时通讯系统（类似qq聊天系统）
 
         2.4.1用户表
           初始的数据如下：
-          
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserData.png)
+   
           -- 向用户表中插入数据 --
           insert into user(account,pwd,state) values('王嫣兰','1','离线');
           insert into user(account,pwd,state) values('赵雯楚','1','离线');
@@ -86,9 +88,11 @@ Instant messaging system  即时通讯系统（类似qq聊天系统）
           insert into user(account,pwd,state) values('孙明峰','1','离线');
         2.4.2离线消息表
           数据如下：（初始时无数据）
-
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/OfflineMessageData.png)
+   
       2.5 关键类和包结构设计
-         
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/Package.png)
+   
           messageDao：
             用于离线消息表的数据库访问对象，包含了对message对象的各种数据库操作
           userDao：
@@ -110,30 +114,50 @@ Instant messaging system  即时通讯系统（类似qq聊天系统）
 
       2.6 界面设计
          2.6.1登录界面
-
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/LoginInterface.png)
+   
             图2：登录界面
             说明：输入账号密码，点击“登录”按钮，进入用户页面；点击“注册”按钮进入，注册界面。
+            
          2.6.2注册界面
-         
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/RegisterInterface.png) 
+   
             图3：注册界面
             说明：输入账号密码，点击“注册”按钮，若账号密码无误，提示注册成功；否则，注册失败。点击“返回”按钮，返回到登录界面。
-         2.6.3用户界面
             
+         2.6.3用户界面
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserInterface.png)   
+   
             图4：用户界面
             说明：输入正确的账号密码，进入到用户界面
-         2.6.4后台界面
-         
-            图5：后台界面
-            说明：后台服务器管理界面
         
-        2.7 用户互发消息功能
-
+         2.6.4 用户互发消息功能
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserMutualMessage1.png)
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserMutualMessage2.png)
          
-        2.8 用户登陆显示离线消息(如无不显示)
+         2.6.5 用户登陆显示离线消息(如无不显示)
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserLoginDisplayOfflineMessage1.png)
+   
+            用户“任孟凯”先给用户“何昶源”发送了离线消息，登陆用户“何昶源”查看是否有离线消息。 如下：
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserLoginDisplayOfflineMessage2.png) 
+   
+            如图所示，说明用户“何昶源”已收到离线消息。
          
-        2.9 用户设置“隐身”状态
-        如下图所示，用户在任孟凯设置为“隐身”状态
+         2.6.6 用户设置“隐身”状态
+            如下图所示，用户在任孟凯设置为“隐身”状态
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserSetStealthState.png)
+   
+         2.6.7 用户群发消息
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserGroupMessages1.png)
 
-        2.10 用户群发消息
+            如图所示，用户“任孟凯”给所有在线用户发送了消息。
+            如下图，两个在线用户“孙明峰”和“张琦”都收到了”任孟凯”发送的消息。
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/UserGroupMessages2.png)     
 
+         2.6.8后台界面
+   ![image](https://github.com/TouchDreamRen/Instant-messaging-system/raw/master/screenshots/ServerInterface.png)   
+   
+            图8：后台界面
+            说明：后台服务器管理界面，左边页面记录用户状态，右边显示在线的用户列表。
+            左上角控制菜单栏，有开启服务器按钮，只有开启之后，用户才能连接上服务器。
 
